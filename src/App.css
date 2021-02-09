@@ -1,38 +1,161 @@
 .App {
   text-align: center;
+  background-image: url("./trivia-tuesdays-background.jpg");
+  background-size: cover;
+  height: 100vh;
 }
 
-.App-logo {
-  height: 40vmin;
+
+.header{
+  color: azure;
+  font-family: "Arial Helvetica sans-serif";
+  font-size: 65px;
+  text-decoration: underline;
+  font-style: oblique;
+  font-weight: bold;
+  text-shadow: #47a0e9 3px 3px;
+  width: 40%;
+  transform: translateX(65%);
+  border-radius: 25px;
+}
+
+.completed{
   pointer-events: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.question-label {
+  color: #fff3cd;
+  font-family: "Arial Helvetica sans-serif";
+  font-size: 55px;
+  text-decoration: underline;
+  font-style: oblique;
+  font-weight: bold;
+  text-shadow: black 2px 2px;
+  background-color: steelblue;
+  width: 40%;
+  transform: translateX(65%);
+  border-radius: 25px;
+}
+
+.progress-label {
+  color: #fff3cd;
+  font-family: "Arial Helvetica sans-serif";
+  font-size: 30px;
+  text-decoration: underline;
+  font-style: oblique;
+  font-weight: bold;
+  text-shadow: black 2px 2px;
+  background-color: steelblue;
+  width: 40%;
+  transform: translateX(65%);
+  border-radius: 25px;
+}
+
+.footer {
+  position: relative;
+  top: 100px;
+}
+
+.question {
+  color: #856404;
+  font-family: "Arial Helvetica sans-serif";
+  font-size: 35px;
+  font-style: oblique;
+  font-weight: bold;
+  background-color: #fff3cd;
+  width: 70%;
+  transform: translateX(17%);
+  border-radius: 25px;
+}
+
+.buttonStart:hover {
+  background-color: "green";
+  opacity: 0.9;
+}
+
+.answer-buttons {
+  color: goldenrod !important;
+  background-color: azure !important;
+  border-radius: 15px !important;
+  font-size: 18px !important;
+  min-width: 200px;
+}
+
+.answer-buttons:hover {
+  color: azure !important;
+  background-color: goldenrod !important;
+}
+
+.jokerButtons {
+  background-color: #fafafa !important;
+  color: #29313a !important;
+  border-radius: 15px !important;
+  font-size: 18px !important;
+  border: 2px solid tomato !important;
+  min-width: 200px;
+}
+
+.jokerButtons:hover {
+  color: #fafafa !important;
+  background-color: #29313a !important;
+}
+
+.stage {
+  float: right;
+  margin-right: -5px;
+  position: relative;
+  list-style: none;
+  padding: -20px;
+  color: azure;
+  text-align: left;
+  font-size: 0.9em;
+  font-style: oblique;
+  text-decoration: underline;
+  color: azure;
+  font-weight: bold;
+  margin-left: 15px;
+}
+
+.trivia{
+  position: absolute;
+  top: 11%;
+  right: 14%;
+  left: 10%;
+}
+
+@media (max-width: 767px) {
+  .App{
+    height: 800px;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  .question {
+    margin-left: -27px;
+    width: 90% !important;
+    transform: none !important;
+    font-size: 25px !important;
   }
-  to {
-    transform: rotate(360deg);
+
+  .progress-label {
+    transform: translateX(0%);
+    width: 100%;
+  }
+
+  .stage {
+    margin-right: -35px !important;
+  }
+
+  .question-label {
+    margin-left: -27px;
+    width: 90% !important;
+    transform: none !important;
+    font-size: 25px !important;
+  }
+
+  .footer {
+    top: 0;
+  }
+
+  .triviaButtons {
+    margin-right: 100px !important;
+    margin-left: -25px !important;
   }
 }
